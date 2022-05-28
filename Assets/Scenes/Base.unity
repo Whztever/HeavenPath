@@ -487,7 +487,7 @@ MonoBehaviour:
   completedLines:
   - "\u54C8\u54C8\u54C8"
   talkIcon: {fileID: 1403823107}
-  saveMeQuest: {fileID: 30154898}
+  saveMeQuest: {fileID: 0}
   questable: {fileID: 0}
   questTarget: {fileID: 0}
 --- !u!114 &30154898
@@ -132000,11 +132000,11 @@ MonoBehaviour:
   damageCanvas: {fileID: 0}
   lightPause: 0
   heavyPause: 0
-  interval: 0.7
+  interval: 2
   timer: 0
   comboStep: 0
   msBetweenShots: 300
-  anim: {fileID: 1925516684}
+  anim: {fileID: 0}
 --- !u!1 &144498911
 GameObject:
   m_ObjectHideFlags: 0
@@ -136649,11 +136649,6 @@ Transform:
   m_Father: {fileID: 30154894}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1925516684 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 2062737930282312521, guid: 0add1653e8243504a8eca8d8f51f5a8c, type: 3}
-  m_PrefabInstance: {fileID: 2062737928505954031}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1925516691
 MonoBehaviour:
   m_ObjectHideFlags: 0
