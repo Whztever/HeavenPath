@@ -231,7 +231,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log("anim");
             anim.SetBool("jumping", true);
         }
-        if (rb.velocity.y < 0 && !isLadder)
+        if (rb.velocity.y < 0 && !isLadder&&!isGround)
         {
             anim.SetBool("jumping", false);
             anim.SetBool("falling", true);
@@ -328,28 +328,31 @@ public class PlayerController : MonoBehaviour
         {
             if (moveY > 0.5f || moveY < -0.5f)
             {
-                //anim.SetBool("jumping", false);
+                anim.SetBool("jumping", false);
                 anim.SetBool("Climbing", true);
+                anim.SetBool("Onladder", false);
                 rb.velocity = new Vector2(rb.velocity.x, moveY * onLadderSpeed);
                 rb.gravityScale = 0.0f;
             }
             else
             {
-                if (isJumping || isFalling )
+                if (isJumping || isFalling ||anim.GetBool("running"))
                 {
                     anim.SetBool("Climbing", false);
+                    anim.SetBool("Onladder", false);
                 }
                 else
                 {
                     anim.SetBool("Climbing", false);
                     rb.velocity = new Vector2(rb.velocity.x, 0.0f);
-
+                    anim.SetBool("Onladder", true);
                 }
             }
         }
         else
         {
             anim.SetBool("Climbing", false);
+            anim.SetBool("Onladder", false);
             rb.gravityScale = playerGravityScale;
         }
 
