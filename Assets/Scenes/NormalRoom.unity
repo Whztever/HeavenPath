@@ -35003,7 +35003,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 347707836}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.9244852, y: -1.6919191, z: -10}
+  m_LocalPosition: {x: 2.8957224, y: -1.6920764, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -35323,7 +35323,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 453966355}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: StaticEnvironments
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35355,6 +35355,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 495024414}
+  - component: {fileID: 495024415}
   m_Layer: 0
   m_Name: pos1
   m_TagString: Untagged
@@ -35377,6 +35378,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &495024415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495024413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: 103b0616690034ca1a309e958ed431fc, type: 2}
 --- !u!1 &500169675
 GameObject:
   m_ObjectHideFlags: 0
@@ -44334,7 +44352,7 @@ ParticleSystem:
     collidesWithDynamic: 1
     interiorCollisions: 0
   TriggerModule:
-    enabled: 0
+    enabled: 1
     serializedVersion: 2
     inside: 1
     outside: 0
@@ -44342,7 +44360,8 @@ ParticleSystem:
     exit: 0
     colliderQueryMode: 0
     radiusScale: 1
-    primitives: []
+    primitives:
+    - {fileID: 1784753573}
   SubModule:
     serializedVersion: 2
     enabled: 0
@@ -45711,7 +45730,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7887324, y: 1}
+    m_SensorSize: {x: 1.7777778, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -45728,7 +45747,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1191885372}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.926496, y: -2.8293998, z: -10}
+  m_LocalPosition: {x: 2.8977332, y: -2.8293998, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -46477,7 +46496,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.6, y: 2.4}
+    oldSize: {x: 1, y: 2}
     newSize: {x: 0.33, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -47134,6 +47153,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Weapon
       objectReference: {fileID: 0}
+    - target: {fileID: 2062737928569061717, guid: 0add1653e8243504a8eca8d8f51f5a8c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.19
+      objectReference: {fileID: 0}
     - target: {fileID: 2062737930282312520, guid: 0add1653e8243504a8eca8d8f51f5a8c, type: 3}
       propertyPath: CDTime
       value: 1
@@ -47141,6 +47164,10 @@ PrefabInstance:
     - target: {fileID: 2062737930282312520, guid: 0add1653e8243504a8eca8d8f51f5a8c, type: 3}
       propertyPath: DashTime
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2062737930282312520, guid: 0add1653e8243504a8eca8d8f51f5a8c, type: 3}
+      propertyPath: leftTime
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 2062737930282312520, guid: 0add1653e8243504a8eca8d8f51f5a8c, type: 3}
       propertyPath: DashSpeed
@@ -47198,6 +47225,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2062737930282312523, guid: 0add1653e8243504a8eca8d8f51f5a8c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a4a6e694106aa404bb406b8f76a5f28f, type: 3}
     - target: {fileID: 2062737930282312524, guid: 0add1653e8243504a8eca8d8f51f5a8c, type: 3}
       propertyPath: m_Name
       value: Player

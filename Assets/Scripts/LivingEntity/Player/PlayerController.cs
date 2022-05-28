@@ -55,7 +55,8 @@ public class PlayerController : MonoBehaviour
     public float onLadderSpeed;
     private bool isLadder;
     public bool canClimb;
-
+    [Header("跳跃延迟时间")]
+    public float leftTime;
 
     private bool isRuning;
     private bool isJumping;
@@ -97,6 +98,8 @@ public class PlayerController : MonoBehaviour
         {
            jumpPressed = true;
             canClimb = true;
+            Debug.Log("press");
+           // Invoke("Jump", leftTime);
         }
 
         if (Input.GetKeyDown(KeyCode.LeftShift))
@@ -140,7 +143,7 @@ public class PlayerController : MonoBehaviour
 
         GetCondition();
 
-        
+        BetterJump();
     }
 
     void GroundMovement()
@@ -170,24 +173,34 @@ public class PlayerController : MonoBehaviour
         if (isGround)
         {
             jumpCount = 2;//可跳跃数量
-            isJump = false;
+            //isJump = false;
         }
         if (jumpPressed && isGround)
         {
             isJump = true;
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-            jumpCount--;
-            jumpPressed = false;
+            StartCoroutine(JumpDelay());
+
         }
-        else if (jumpPressed && jumpCount > 0 && isJump)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-            //todo：二段跳可以考虑加个特效Instantiate(jumpEffect, transform.position - Vector3.up, Quaternion.identity);
-            jumpCount--;
-            jumpPressed = false;
-        }
-        BetterJump();
     }
+
+    IEnumerator JumpDelay()
+    {
+        yield return new WaitForSeconds(0.125f);
+
+            Debug.Log("jump");
+           // isJump = true;
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            jumpCount--;
+            jumpPressed = false;
+        yield return new WaitForSeconds(0.1f);
+        isJump = false;
+           // rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            //todo：二段跳可以考虑加个特效Instantiate(jumpEffect, transform.position - Vector3.up, Quaternion.identity);
+           // jumpCount--;
+           // jumpPressed = false;
+      
+    }
+
     //更好的跳跃效果[重力改变法]
     private void BetterJump()
     {
@@ -206,24 +219,30 @@ public class PlayerController : MonoBehaviour
         anim.SetFloat("running", Mathf.Abs(rb.velocity.x));
         //Debug.Log(isGround);
         //Debug.Log(rb.velocity.y);
-        if (isGround)
+        if (isGround &&!isJump)
         {   //Player跳上平台没状态转换应该是因为刚好跳上去falling成false了
             //这样就不去判断底下的条件了没法把jump的值改过来了 
             anim.SetBool("falling", false);
+            Debug.Log("gouundfalse");
             anim.SetBool("jumping", false);//解决：加上这一句ok
         }
-        else if (!isGround && rb.velocity.y > 0)
+        if (isJump)
         {
+            Debug.Log("anim");
             anim.SetBool("jumping", true);
         }
-        else if (rb.velocity.y <= 0 && !isLadder)
+        if (rb.velocity.y < 0 && !isLadder)
         {
             anim.SetBool("jumping", false);
             anim.SetBool("falling", true);
         }
+        else if (rb.velocity.y == 0 && !isLadder)
+        {
+            anim.SetBool("falling", false);
+        }
         else if(rb.velocity.y <=0 && isLadder)
         {
-            anim.SetBool("jumping", false);
+            //anim.SetBool("jumping", false);
             anim.SetBool("falling", false);
         }
 
@@ -282,7 +301,7 @@ public class PlayerController : MonoBehaviour
     void GetCondition()
     {
         isClimbing = anim.GetBool("Climbing");
-        isJump = anim.GetBool("jumping");
+        isJumping = anim.GetBool("jumping");
     }
 
     void Climb()
@@ -309,7 +328,7 @@ public class PlayerController : MonoBehaviour
         {
             if (moveY > 0.5f || moveY < -0.5f)
             {
-                anim.SetBool("jumping", false);
+                //anim.SetBool("jumping", false);
                 anim.SetBool("Climbing", true);
                 rb.velocity = new Vector2(rb.velocity.x, moveY * onLadderSpeed);
                 rb.gravityScale = 0.0f;
