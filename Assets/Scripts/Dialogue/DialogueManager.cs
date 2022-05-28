@@ -16,13 +16,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private float scrollingSpeed;
 
     public Talkable talkable;//采用获取脚本的方法访问变量
-    //这些参数应该从我的一个新的类穿过来，而且奖励和talkable里生成新的对话也要有一个新的类
-    //这个放在talkable里
-    //[Header("救我相关")]
-    //怎么尝试get
-    //public SaveMeQuest saveMeQuest;
     //设计成单例模式挂在Dialoguepanel下
-
     private void Awake()
     {
         if(instance == null)
@@ -56,31 +50,13 @@ public class DialogueManager : MonoBehaviour
 
         PlayerController.instance.isTalking = true;
     }
+
     private void Update()
     {
         if(dialogueBox.activeInHierarchy)//只在激活panel时检测按下左键
         {
-            //当任务为save类
-            if (talkable.saveMeQuest&&Input.GetKeyUp(KeyCode.Return) &&!talkable.saveMeQuest.saved)
-            {
-                PlayerEnergy.instance.ep -= talkable.saveMeQuest.energyDelta;
-                EnergyBar.instance.UpdateEp();
-                //任务完成
-                //todo如果save以后1，要调用精力条，精力--2对话结束后要开出奖励list
-                talkable.saveMeQuest.saved = true;
-                Debug.Log("任务完成");
-                if (!talkable.saveMeQuest.isFinished)
-                {
-                    ShowDialogue(talkable.congratsLines, talkable.hasName);//祝福的台词
-                    talkable.saveMeQuest.isFinished = true;//开关，保证一次
-                    //对话结束后给奖励--要改
-                    //talkable.questable.OfferRewards();
-                }
-                
-
-            }
-            //按下并松开右shift键
-            if (Input.GetKeyUp(KeyCode.RightShift)  && !isScrolling)
+            //按下并松开左键
+            if (Input.GetMouseButtonUp(0) && !isScrolling)
             {
                 currentLine++;
 
@@ -92,7 +68,7 @@ public class DialogueManager : MonoBehaviour
                 #region
                 else// 对话即将结束时候
                 {
-                    if ((GetQuestResult()) && talkable.questable.isFinished == false)//如果当前对话的这个任务【已经完成】
+                    if (GetQuestResult() && talkable.questable.isFinished == false)//如果当前对话的这个任务【已经完成】
                     {
                         ShowDialogue(talkable.congratsLines, talkable.hasName);//祝福的台词
                         talkable.questable.isFinished = true;//开关，保证一次

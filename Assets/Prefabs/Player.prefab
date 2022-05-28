@@ -1,49 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &236805129
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 236805130}
-  - component: {fileID: 236805131}
-  m_Layer: 10
-  m_Name: Shoudiantong
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &236805130
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 236805129}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2062737930282312522}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!122 &236805131
-Halo:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 236805129}
-  m_Enabled: 1
-  m_Color:
-    serializedVersion: 2
-    rgba: 4294375162
-  m_Size: 100
 --- !u!1 &1166163883
 GameObject:
   m_ObjectHideFlags: 0
@@ -391,7 +347,6 @@ Transform:
   - {fileID: 1166163884}
   - {fileID: 7580190560776150665}
   - {fileID: 5359126458749909547}
-  - {fileID: 236805130}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -441,7 +396,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.6, y: 2.4}
+  m_Size: {x: 0.33, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -497,12 +452,10 @@ MonoBehaviour:
   isTalking: 0
   isShooting: 0
   isCantMoving: 0
-  isAttack: 0
   cantMoveTime: 0
-  DashTime: 0.1
-  CDTime: 1
-  DashSpeed: 30
-  AttackForwardSpeed: 0
+  DashTime: 0
+  CDTime: 0
+  DashSpeed: 0
 --- !u!50 &2062737930282312518
 Rigidbody2D:
   serializedVersion: 4
@@ -542,7 +495,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1.6, y: 2.4}
-    newSize: {x: 1.6, y: 2.4}
+    newSize: {x: 0.33, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0

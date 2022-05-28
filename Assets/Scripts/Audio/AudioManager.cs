@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
-    
+
     public enum AudioChannel { Master, Sfx, Music };
     //这样别的类只能访问，不能改写
     public float masterVolumePercent { get; private set; }//主
