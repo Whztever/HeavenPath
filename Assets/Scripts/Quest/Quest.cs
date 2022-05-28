@@ -3,7 +3,7 @@
 [System.Serializable]
 public class Quest
 {
-    public enum QuestType { Gathering, Talk, Reach,Save };
+    public enum QuestType { Gathering, Talk, Reach };
     public enum QuestStatus { Waitting, Accepted, Completed};
 
     public string questName;

@@ -39,15 +39,12 @@ public class ShadowPool : MonoBehaviour
 
     public GameObject GetFromPool()
     {
-        Debug.Log("test2");
-
         if (avaliableObjects.Count == 0)
         {
             FillPool();
         }
         var outShadow = avaliableObjects.Dequeue();
         outShadow.SetActive(true);
-        Debug.Log("test3");
         return outShadow;
     }
 

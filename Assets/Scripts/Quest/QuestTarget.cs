@@ -6,20 +6,17 @@ public class QuestTarget : MonoBehaviour
 {
     public string questName;
 
-    public enum QuestType { Gathering, Talk, Reach, Save };
+    public enum QuestType { Gathering, Talk, Reach };
     public QuestType questType;
 
-    [Header("交谈类")]
+    [Header("Talk Type Quest")]
     public bool hasTalked;
 
-    [Header("到达区域类")]
+    [Header("Reach Type Quest")]
     public bool hasReach;
-    [Header("拯救类")]
-    public bool hasSaved;
 
     //这个方法会在【完成的时候】触发
     //比如说，NPC对话完成后、到达探索区域、收集完物品
-  
     public void CheckQuestIsComplete()
     {
         for(int i = 0; i < PlayerItem.instance.questList.Count; i++)
@@ -27,8 +24,6 @@ public class QuestTarget : MonoBehaviour
             if (questName == PlayerItem.instance.questList[i].questName 
              && PlayerItem.instance.questList[i].questStatus == Quest.QuestStatus.Accepted)
             {
-                #region 
-             
                 switch (questType)
                 {
                     case QuestType.Gathering:
@@ -55,15 +50,7 @@ public class QuestTarget : MonoBehaviour
                             QuestManager.instance.UpdateQuestList();
                         }
                         break;
-                    case QuestType.Save:
-                        if (hasSaved)
-                        {
-                            PlayerItem.instance.questList[i].questStatus = Quest.QuestStatus.Completed;
-                            QuestManager.instance.UpdateQuestList();
-                        }
-                        break;
                 }
-                #endregion
             }
         }
     }
