@@ -1,0 +1,712 @@
+fileFormatVersion: 2
+guid: 498de8664245ab2449613fa2e2417afb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1307195680679912399
+    second: BG Walls_0
+  - first:
+      213: -4252549880050476630
+    second: BG Walls_1
+  - first:
+      213: 1278170515951504107
+    second: BG Walls_2
+  - first:
+      213: 4928986712928436710
+    second: BG Walls_3
+  - first:
+      213: 6779166300242278389
+    second: BG Walls_4
+  - first:
+      213: -4632319925016520439
+    second: BG Walls_5
+  - first:
+      213: -6111846776051523241
+    second: BG Walls_6
+  - first:
+      213: -5547662992262459202
+    second: BG Walls_7
+  - first:
+      213: -6778035620189934551
+    second: BG Walls_8
+  - first:
+      213: -7391935070148840229
+    second: BG Walls_9
+  - first:
+      213: -1677710615474742598
+    second: BG Walls_10
+  - first:
+      213: 8609024535920496912
+    second: BG Walls_11
+  - first:
+      213: -4955358997203678424
+    second: BG Walls_12
+  - first:
+      213: 5809618594399911023
+    second: BG Walls_13
+  - first:
+      213: 5638141404529454267
+    second: BG Walls_14
+  - first:
+      213: -531986002644025722
+    second: BG Walls_15
+  - first:
+      213: 1184727322184535384
+    second: BG Walls_16
+  - first:
+      213: 2757771606297021787
+    second: BG Walls_17
+  - first:
+      213: 5871271499915502102
+    second: BG Walls_18
+  - first:
+      213: -6387766384829754829
+    second: BG Walls_19
+  - first:
+      213: -6240816128909780824
+    second: BG Walls_20
+  - first:
+      213: -1161291747260851048
+    second: BG Walls_21
+  - first:
+      213: -8981202660220424514
+    second: BG Walls_22
+  - first:
+      213: -7096995022846749370
+    second: BG Walls_23
+  - first:
+      213: 186339327032458308
+    second: BG Walls_24
+  - first:
+      213: -2294146794103863308
+    second: BG Walls_25
+  - first:
+      213: -2939058172395053448
+    second: BG Walls_26
+  - first:
+      213: -8367414169781040111
+    second: BG Walls_27
+  - first:
+      213: 842080234364050872
+    second: BG Walls_28
+  - first:
+      213: -2347821565025016600
+    second: BG Walls_29
+  - first:
+      213: 2507299404493322506
+    second: BG Walls_30
+  - first:
+      213: -5198663763804989361
+    second: BG Walls_31
+  - first:
+      213: 2812517762385868189
+    second: BG Walls_32
+  - first:
+      213: 2261786416380872829
+    second: BG Walls_33
+  - first:
+      213: -4024044966547260761
+    second: BG Walls_34
+  - first:
+      213: -5732233032857716277
+    second: BG Walls_35
+  - first:
+      213: 120016849347427567
+    second: BG Walls_36
+  - first:
+      213: 8160547942100216655
+    second: BG Walls_37
+  - first:
+      213: 8120976822729458477
+    second: BG Walls_38
+  - first:
+      213: -3585935338972855722
+    second: BG Walls_39
+  - first:
+      213: -1425788985129587503
+    second: BG Walls_40
+  - first:
+      213: 5789293167079753805
+    second: BG Walls_41
+  - first:
+      213: -7891137768092143841
+    second: BG Walls_42
+  - first:
+      213: -194649503850288513
+    second: BG Walls_43
+  - first:
+      213: -3196437286747622321
+    second: BG Walls_44
+  - first:
+      213: -1277289641614282095
+    second: BG Walls_45
+  - first:
+      213: -3253975761511319317
+    second: BG Walls_46
+  - first:
+      213: -4372149959995325134
+    second: BG Walls_47
+  - first:
+      213: 3226917265403841667
+    second: BG Walls_48
+  - first:
+      213: 2294532979096292908
+    second: BG Walls_49
+  - first:
+      213: 790049402138733751
+    second: BG Walls_50
+  - first:
+      213: 8905774496012875057
+    second: BG Walls_51
+  - first:
+      213: 5917084273793478618
+    second: BG Walls_52
+  - first:
+      213: 1234335099284566167
+    second: BG Walls_53
+  - first:
+      213: 6817646951475741108
+    second: BG Walls_54
+  - first:
+      213: 8371069191247364026
+    second: BG Walls_55
+  - first:
+      213: 5342608196609094581
+    second: BG Walls_56
+  - first:
+      213: -7211974294946047535
+    second: BG Walls_57
+  - first:
+      213: -1607198568308229776
+    second: BG Walls_58
+  - first:
+      213: -641101736164655402
+    second: BG Walls_59
+  - first:
+      213: 3151999039337295540
+    second: BG Walls_60
+  - first:
+      213: -2481236027176581127
+    second: BG Walls_61
+  - first:
+      213: -8345913340895642834
+    second: BG Walls_62
+  - first:
+      213: 6736047342259230286
+    second: BG Walls_63
+  - first:
+      213: 682798295683273706
+    second: BG Walls_64
+  - first:
+      213: 8281119320840535694
+    second: BG Walls_65
+  - first:
+      213: -4694108845272807897
+    second: BG Walls_66
+  - first:
+      213: 3875135922496899524
+    second: BG Walls_67
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 385, z: 891, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BG Walls_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13c16294478ebdde0800000000000000
+      internalID: -1307195680679912399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Walls_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa916f14a68ebf4c0800000000000000
+      internalID: -4252549880050476630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Walls_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beacaadef49fcb110800000000000000
+      internalID: 1278170515951504107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Walls_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e148beec47476440800000000000000
+      internalID: 4928986712928436710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Walls_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f77d3f15df641e50800000000000000
+      internalID: 6779166300242278389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Walls_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9091d6f3291b6bfb0800000000000000
+      internalID: -4632319925016520439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Walls_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75125d73dbb5e2ba0800000000000000
+      internalID: -6111846776051523241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Walls_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb09d9cb6edb203b0800000000000000
+      internalID: -5547662992262459202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Walls_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92c62a7d3849fe1a0800000000000000
+      internalID: -6778035620189934551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Walls_9
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd4b605c7329a6990800000000000000
+      internalID: -7391935070148840229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Walls_10
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abad9b8851397b8e0800000000000000
+      internalID: -1677710615474742598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Walls_11
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 011d92ee336697770800000000000000
+      internalID: 8609024535920496912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Walls_12
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82b83252f370b3bb0800000000000000
+      internalID: -4955358997203678424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Walls_13
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6cf5b7b459ef9050800000000000000
+      internalID: 5809618594399911023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Walls_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbc666a3cb3be3e40800000000000000
+      internalID: 5638141404529454267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Walls_15
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68e3ce69c810e98f0800000000000000
+      internalID: -531986002644025722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG Walls_16
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85d428af83ff07010800000000000000
+      internalID: 1184727322184535384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      BG Walls_12: -4955358997203678424
+      BG Walls_11: 8609024535920496912
+      BG Walls_5: -4632319925016520439
+      BG Walls_14: 5638141404529454267
+      BG Walls_4: 6779166300242278389
+      BG Walls_16: 1184727322184535384
+      BG Walls_10: -1677710615474742598
+      BG Walls_13: 5809618594399911023
+      BG Walls_15: -531986002644025722
+      BG Walls_0: -1307195680679912399
+      BG Walls_6: -6111846776051523241
+      BG Walls_7: -5547662992262459202
+      BG Walls_9: -7391935070148840229
+      BG Walls_3: 4928986712928436710
+      BG Walls_1: -4252549880050476630
+      BG Walls_2: 1278170515951504107
+      BG Walls_8: -6778035620189934551
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
